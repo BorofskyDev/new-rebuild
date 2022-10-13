@@ -43,7 +43,6 @@
   border: 1px solid hsl(var(--clr-white));
   padding: 0.3em 0.9em;
   box-shadow: 0 0 2px 3px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
-  font-size: var(--fs-400);
   transform: scale(1);
   transition: all 300ms ease-in;
 }
@@ -59,6 +58,7 @@
   color: hsl(var(--clr-white));
   text-transform: uppercase;
   font-size: 1.1rem;
+  letter-spacing: 2px;
   background-color: hsl(var(--clr-primary));
   padding: 0.4em 0.8em;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
@@ -76,6 +76,12 @@
   height: 8vh;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px);
+}
+
+.active-link {
+  color: hsl(var(--clr-primary));
+  padding: 0.2em 0.4em;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.4)
 }
 
 @media (max-width: 45em) {
