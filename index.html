@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Uptown Rebuild</title>
-  </head>
-  <body>
 
-    <!------------------------------------------------->
-    <!--NAVIGATION                                   -->
-    <!------------------------------------------------->
-    <nav class="navbar">
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uptown Rebuild</title>
+</head>
+
+<body>
+
+  <!------------------------------------------------->
+  <!--NAVIGATION                                   -->
+  <!------------------------------------------------->
+  <nav class="navbar">
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="link">about</a></li>
+      <li><a href="#" class="link">features</a></li>
+      <li><a href="#" class="link">floorplans</a></li>
+      <li><a href="#" class="link">gallery</a></li>
+      <a href="#" class="contact-btn">contact</a>
+      <a href="#" class="portal-btn">resident login</a>
+    </ul>
+  </nav>
+
+  <!------------------------------------------------->
+  <!--HERO                                         -->
+  <!------------------------------------------------->
+
+  <header class="hero">
+    <h1 class="hero-title">uptown landing</h1>
+  </header>
+
+  <!------------------------------------------------->
+  <!--ABOUT                                         -->
+  <!------------------------------------------------->
+  <main id="main-content">
+    <section class="about section-container" id="about">
+      <img src="public/images/main-imgs/divider.webp" class="divider">
+      <h2 class="title">luxury college hill apartments</h2>
+      <p class="about-text font-regular">Located in the heart of Wichita’s popular College Hill neighborhood, Uptown Landing offers
+        exclusive luxury apartments
+        within easy reach of <a href="#" class="about-link">Downtown</a>, <a href="#" class="about-link"> Old Town</a>, and walking distance from restaurants, shopping, pubs, and grocery
+        stores.
+        Whether you choose a 1, 2, or 3 bedroom apartment, each home features energy-efficient central heat and air, a
+        stainless
+        steel appliance package, luxury cabinetry, granite countertops, hardwood floors, premium lighting package, and
+        private
+        balconies. Our building includes secure keypad access and gated parking, onsite office, fitness center, elevator
+        in the
+        building, and a rooftop sunset terrace with expansive views of the <a href="#" class="about-link">City of Wichita</a>.</p>
+      <div class="image-container">
+        <img  src="public/images/ict-imgs/ict-img1.jpg" alt="Pedestrian bridge over river at sunset with the Keeper of the Plains sculpture in the background" class="about-image">
+        <img src="public/images/ict-imgs/ict-img4.jpg" alt="People at a small outside concert, behind a bar" class="about-image">
+        <img src="public/images/ict-imgs/ict-img5.jpg" alt="Downtown Wichita with the Intrust Bank Arena in the foreground" class="about-image">
       </div>
-      <ul class="nav-links">
-        <li><a href="#" class="link">about</a></li>
-        <li><a href="#" class="link">features</a></li>
-        <li><a href="#" class="link">floorplans</a></li>
-        <li><a href="#" class="link">gallery</a></li>
-        <a href="#" class="contact-btn">contact</a>
-        <a href="#" class="portal-btn">resident login</a>
-      </ul>
-    </nav>
+    </section>
+  </main>
+  <script type="module" src="public/js/main.js"></script>
+</body>
 
-    
-    <script type="module" src="public/js/main.js"></script>
-  </body>
 </html>

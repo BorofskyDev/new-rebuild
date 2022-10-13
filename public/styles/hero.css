@@ -1,0 +1,28 @@
+@import './style.css';
+
+.hero {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-image: url(../images/main-imgs/uptown-landing-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: hsl(var(--clr-dark) / 0.4);
+    background-blend-mode: multiply;
+    padding: 0 1em;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    overflow: hidden;
+    margin: 0 auto;
+    font-family: var(--heading);
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: clamp(3rem, 32.7vw - 8.5rem, 12rem);
+    text-shadow: 0 0 8px hsl(var(--clr-accent)), 0 0 16px hsl(var(--clr-white));
+}
