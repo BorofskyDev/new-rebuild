@@ -97,8 +97,10 @@
   }
 
   .hamburger {
-    position: fixed;
+    background-color: hsl(var(--clr-primary));
+    height: 1.8em;
     cursor: pointer;
+    position: fixed;
     right: 5%;
     top: 2%;
     transform: translate(-5%, -2%);

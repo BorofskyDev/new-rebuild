@@ -244,7 +244,9 @@ select {
   margin: 4em auto 0 auto;
 }
 
-.fa-solid {
+.fa-solid,
+.fa-brands,
+.fa-regular {
     padding-right: 0.8em;
     color: hsl(var(--clr-primary));
     font-size: var(--fs-400);  
