@@ -3,6 +3,7 @@ import '../styles/navbar.css'
 import '../styles/hero.css'
 import '../styles/about.css'
 import '../styles/features.css'
+import '../styles/floorplans.css'
 
 import './navbar.js'
 

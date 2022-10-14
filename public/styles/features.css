@@ -30,12 +30,6 @@
     padding: 0.5em 0;
 }
 
-.fa-solid {
-    padding-right: 0.5em;
-    color: hsl(var(--clr-primary));
-    font-size: var(--fs-400);
-   
-}
 
 @media (max-width: 50em){
     .features-amenities {
