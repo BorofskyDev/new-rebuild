@@ -1,0 +1,21 @@
+@import './style.css';
+
+.footer {
+    min-height: 20vh;
+    background-color: hsl(var(--clr-neutral));
+    color: hsl(var(--clr-primary));
+    margin-top: 2em;
+    text-align: center;
+}
+
+.top-text {
+    padding: 1em 2em;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: var(--fs-300);
+}
+
+.footer-image {
+    height: 3em;
+    display: inline-block;
+}
