@@ -5,9 +5,10 @@ import '../styles/about.css'
 import '../styles/features.css'
 import '../styles/floorplans.css'
 import '../styles/fees.css'
+import '../styles/gallery.css'
 import '../styles/contact.css'
 import '../styles/footer.css'
 
 import './navbar.js'
 import './contact.js'
-
+import './gallery.js'

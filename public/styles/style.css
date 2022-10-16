@@ -238,6 +238,7 @@ select {
     padding: 0.5em 0.2em;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 0 0 12px hsl(var(--clr-accent)), 0 0 12px hsl(var(--clr-white));
 }
 
 .divider {

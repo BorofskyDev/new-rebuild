@@ -1,0 +1,49 @@
+@import './style.css';
+
+.gallery {
+  height: 530px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 550px;
+  margin: 0 auto;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.8) inset,
+    0 0 15px 1px rgba(0, 0, 0, 0.4) inset;
+}
+
+.gallery-img--container {
+  display: flex;
+  transform: translate(0);
+  transition: transform 500ms ease-in-out;
+}
+
+.gallery-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-btn {
+  background-color: hsl(var(--clr-primary));
+  border: none;
+  padding: 0.5em;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.gallery-btn:hover {
+  opacity: 0.9;
+}
+
+.gallery-img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
