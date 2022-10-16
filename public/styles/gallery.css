@@ -47,3 +47,9 @@
   height: 500px;
   object-fit: cover;
 }
+
+@media (max-width: 40em){
+    .gallery-container {
+        width: 270px;
+    }
+}

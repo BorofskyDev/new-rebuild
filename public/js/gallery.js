@@ -1,40 +1,46 @@
-const galleryImgs = document.getElementById('imgs')
-const leftBtn = document.getElementById('left')
-const rightBtn = document.getElementById('right')
-const galleryImage = document.querySelectorAll('#imgs #img')
+const galleryImgs = document.getElementById('imgs');
+const galleryImage = document.querySelectorAll('#imgs #img');
 
-let idx = 0
-
-let interval =- setInterval(run, 3000)
+let idx = 0;
 
 function run() {
-    idx++
+  idx++;
 
-    changeImage()
+  changeImage();
 }
 
-function changeImage(){
-    if(idx > galleryImage.length -1){
-        idx = 0
-    } else if(idx < 0){
-        idx = galleryImage.length -1
-    }
-    galleryImgs.style.transform = `translateX(${-idx * 500}px)`
+function changeImage() {
+  if (idx > galleryImage.length - 1) {
+    idx = 0;
+  } else if (idx < 0) {
+    idx = galleryImage.length - 1;
+  }
+  if (screen.width > 640) {
+    galleryImgs.style.transform = `translateX(${-idx * 500}px)`;
+  } else if (screen.width < 640) {
+    galleryImgs.style.transform = `translateX(${-idx * 270}px)`;
+  }
 }
 
-function resetInterval(){
-    clearInterval(interval)
-    interval = setInterval(run, 3000)
-}
+document.getElementById('right').addEventListener('click', () => {
+  idx++;
+  changeImage();
+  resetInterval();
+});
 
-rightBtn.addEventListener('click', () => {
-    idx++
-    changeImage()
-    resetInterval()
-})
+document.getElementById('left').addEventListener('click', () => {
+  idx--;
+  changeImage();
+  resetInterval();
+});
 
-leftBtn.addEventListener('click', () => {
-    idx--
-    changeImage()
-    resetInterval()
-})
+// This would be left at an option for the client - personally,
+// I find interval images to be distracting. For acc. I try to limit
+// animations and motions.
+
+// let interval = -setInterval(run, 3000);
+
+// function resetInterval() {
+//   clearInterval(interval);
+//   interval = setInterval(run, 3000);
+//
