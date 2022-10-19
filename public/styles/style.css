@@ -102,6 +102,7 @@ body {
   background-color: hsl(var(--clr-dark));
   color: hsl(var(--clr-white));
   line-height: 1.2;
+  scroll-behavior: smooth;
 }
 
 
